@@ -1,27 +1,42 @@
 // O código abaixo tem alguns erros e não funciona como deveria. Você pode identificar quais são e corrigi-los em um arquivo TS?
 
-let botaoAtualizar = document.getElementById('atualizar-saldo');
-let botaoLimpar = document.getElementById('limpar-saldo');
-let soma = document.getElementById('soma');
-let campoSaldo = document.getElementById('campo-saldo');
+let botaoAtualizar = document.getElementById('atualizarSaldo');
+//let botaoLimpar = document.getElementById('limparSaldo');
+//let soma = document.getElementById('soma');
+//let campoSaldo = document.getElementById('campoSaldo');
 
-campoSaldo.innerHTML = 0
+botaoAtualizar?.addEventListener("click",function(){ alert("Hello World!"); });
 
-function somarAoSaldo(soma) {
-    campoSaldo.innerHTML += soma;
-}
 
-function limparSaldo() {
-    campoSaldo.innerHTML = '';
-}
+//let saldoTotal = 0;
+//limparSaldo();
 
-botaoAtualizar.addEventListener('click', function () {
-    somarAoSaldo(soma.value);
-});
+//function somarAoSaldo(soma: number) {
+//    if (campoSaldo){
+//      saldoTotal += soma ;
+//      campoSaldo.innerHTML = saldoTotal.toString();
+//      limparSaldo();
+//    }
+//}
 
-botaoLimpar.addEventListener('click', function () {
-    limparSaldo();
-});
+//function limparSaldo() {
+//    if (campoSaldo) {
+//      campoSaldo.innerHTML = '';
+//    }
+//}
+
+//botaoAtualizar.addEventListener('click', function () {
+//alert("Cheguei")
+ //   if (soma){
+  //     somarAoSaldo(Number(soma.innerText));
+  //  } else{
+  //      somarAoSaldo(Number(soma.innerText)); 
+ //   }
+//);
+
+//botaoLimpar?.addEventListener('click', function () {
+//    limparSaldo();
+//});
 
 /**
     <h4>Valor a ser adicionado: <input id="soma"> </h4>
