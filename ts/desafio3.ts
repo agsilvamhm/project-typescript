@@ -5,7 +5,7 @@ let botaoAtualizar = document.getElementById('atualizarSaldo');
 //let soma = document.getElementById('soma');
 //let campoSaldo = document.getElementById('campoSaldo');
 
-botaoAtualizar?.addEventListener("click",function(){ alert("Hello World!"); });
+botaoAtualizar?.addEventListener("click",function(){ console.log("Hello World!"); });
 
 
 //let saldoTotal = 0;
